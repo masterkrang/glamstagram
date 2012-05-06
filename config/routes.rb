@@ -1,5 +1,7 @@
 Glamstagram::Application.routes.draw do
 
+  resources :tags
+
   root :to => "photos#index"
   
   resources :users
