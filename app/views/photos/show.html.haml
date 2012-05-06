@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Url:
+  = @photo.url
+%p
+  %b User:
+  = @photo.user_id
+%p
+  %b Source:
+  = @photo.source
+
+= link_to 'Edit', edit_photo_path(@photo)
+\|
+= link_to 'Back', photos_path
