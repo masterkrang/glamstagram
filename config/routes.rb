@@ -1,7 +1,8 @@
 Glamstagram::Application.routes.draw do
-
   
   root :to => "photos#index"
+  
+  match 'session/:action', :to => 'session'
   
   resources :users
   resources :photos

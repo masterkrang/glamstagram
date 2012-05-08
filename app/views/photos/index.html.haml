@@ -1,7 +1,4 @@
-%h1 login with instagram
+%h1= @user.username
 
-.instagram_login
-	= link_to image_tag('Instagram_Icon_Medium.png'), @authorization_url
-	
-.response
-	= @response.to_s
+= @recent_media_items.each do |media|
+	%img{ :src => media.images.thumbnail.url }

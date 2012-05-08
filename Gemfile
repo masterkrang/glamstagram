@@ -13,6 +13,9 @@ gem 'haml-rails'
 
 gem 'instagram', :git => 'git://github.com/Instagram/instagram-ruby-gem.git'
 
+# this is necessary to eliminate an annoying error in instagram gem
+gem 'faraday', '0.7.6'
+
 gem 'httparty'
 
 # Gems used only for assets and not required
