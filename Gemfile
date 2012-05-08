@@ -11,7 +11,9 @@ gem 'json'
 
 gem 'haml-rails'
 
-gem 'instagram'
+gem 'instagram', :git => 'git://github.com/Instagram/instagram-ruby-gem.git'
+
+gem 'httparty'
 
 # Gems used only for assets and not required
 # in production environments by default.

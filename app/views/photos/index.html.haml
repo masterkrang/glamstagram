@@ -1,23 +1,7 @@
-%h1 Listing photos
+%h1 login with instagram
 
-%table
-  %tr
-    %th Url
-    %th User
-    %th Source
-    %th
-    %th
-    %th
-
-  - @photos.each do |photo|
-    %tr
-      %td= photo.url
-      %td= photo.user_id
-      %td= photo.source
-      %td= link_to 'Show', photo
-      %td= link_to 'Edit', edit_photo_path(photo)
-      %td= link_to 'Destroy', photo, :confirm => 'Are you sure?', :method => :delete
-
-%br
-
-= link_to 'New Photo', new_photo_path
+.instagram_login
+	= link_to image_tag('Instagram_Icon_Medium.png'), @authorization_url
+	
+.response
+	= @response.to_s

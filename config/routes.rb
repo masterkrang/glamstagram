@@ -1,11 +1,11 @@
 Glamstagram::Application.routes.draw do
 
-  resources :tags
-
+  
   root :to => "photos#index"
   
   resources :users
   resources :photos
+  resources :tags
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
